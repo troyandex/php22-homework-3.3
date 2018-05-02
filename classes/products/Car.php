@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Products\Car;
+namespace Classes\Products;
 
 class Car extends Product implements CarInterface
 {
@@ -7,7 +7,7 @@ class Car extends Product implements CarInterface
     public $type = 'Car';
 
     public function setCarPower($hp)
-{
-    $this->power = $hp;
-}
+    {
+        $this->power = $hp;
+    }
 }

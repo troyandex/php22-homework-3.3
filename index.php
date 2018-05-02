@@ -10,7 +10,7 @@ function myAutoload($className) {   //учитываем пространств�
 };
 spl_autoload_register('myAutoload');
 
-$car = new \Classes\Products\Car('BMW', 2300000);
+$car = new \Classes\Products\Car('BMW X5', 2300000);
 
 $duckPekin = new \Classes\Animals\Duck ('Пекинская утка', 'Китай');
 $duckPekin->makeSound();

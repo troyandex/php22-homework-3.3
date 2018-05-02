@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Animals\Cow;
+namespace Classes\Animals;
 
 class Cow extends Animal
 {
