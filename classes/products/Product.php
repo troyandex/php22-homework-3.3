@@ -1,11 +1,12 @@
 <?php
 namespace Classes\Products;
 
-abstract class Product extends SuperClass implements ProductInterface
+abstract class Product extends \Classes\Goods implements \Interfaces\ProductInterface
 {
-    protected $title;
-    protected $price;
-    protected $mark;
+    private $id;
+    private $title;
+    private $price;
+    private $mark;
 
     public function __construct($title, $price)
     {

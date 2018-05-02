@@ -1,6 +1,7 @@
 <?php
+namespace Interfaces;
 
 interface CarInterface
 {
-    public function setCarPower();
+    public function setCarPower($hp);
 }

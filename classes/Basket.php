@@ -3,8 +3,8 @@ namespace Classes;
 
 class Basket
 {
-    public $order = array(); // нужно продумать многомерный массив
-    protected $orderSum = 0; // сумма всего заказа
+    private $order = array(); // нужно продумать многомерный массив
+    private $orderSum = 0; // сумма всего заказа
 
     public function addItem($id, $item) // добавляем товар в корзину
     {
@@ -13,11 +13,11 @@ class Basket
 
         $this->order[$id] = $item; // нужно добавить ID к товарам
     }
-    public function GetOrder() // возвращяет состав корзины
+    protected function GetOrder() // возвращяет состав корзины
     {
         return $this->order;
     }
-    public function GetOrderSum() // считает сумму заказа с нуля
+    protected function GetOrderSum() // считает сумму заказа с нуля
     {
         $this->orderSum = 0;
         foreach ($this->order as $item) { // для каждого элемента массива заказа

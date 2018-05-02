@@ -1,7 +1,7 @@
 <?php
 namespace Classes;
 
-abstract class SuperClass
+trait PrintTrait
 {
     public function getPrint()
     {

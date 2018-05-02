@@ -10,17 +10,11 @@ class Order extends Basket
     {
         echo '<strong>Состав заказа:<strong>';
         echo '<pre>';
-        print_r(parent::order);
+        print_r(parent::GetOrder());
         echo '<pre>';
-        return Basket::orderSum;
+        $sum = Basket::GetOrderSum();
+        echo "$sum";
     }
-    public function PrintSum() // вывод суммы
-    {
-        echo '<strong>Состав заказа:<strong>';
-        echo '<pre>';
-        print_r(parent::orderSum);
-        echo '<pre>';
-        return Basket::$orderSum;
-    }
+
 
 }

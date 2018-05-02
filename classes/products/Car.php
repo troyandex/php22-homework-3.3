@@ -1,7 +1,7 @@
 <?php
 namespace Classes\Products;
 
-class Car extends Product implements CarInterface
+class Car extends Product implements \Interfaces\CarInterface
 {
     public $power = 150;
     public $type = 'Car';

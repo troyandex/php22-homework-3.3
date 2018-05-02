@@ -2,7 +2,7 @@
 namespace Classes\Animals;
 
 
-abstract class Animal extends SuperClass implements AnimalInterface
+abstract class Animal extends \Classes\Goods implements \Interfaces\AnimalInterface
 {
     protected $breed; // порода
     protected $dwellingPlace; // место обитания
