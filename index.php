@@ -17,8 +17,6 @@ $duckPekin->makeSound();
 
 ?>
 
-<!d
-
 <!doctype html>
 <html lang="en">
 <head>
