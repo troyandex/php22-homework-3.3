@@ -1,7 +1,7 @@
 <?php
 namespace classes\Products;
 
-abstract class Product extends \Classes\Goods implements \Interfaces\ProductInterface
+abstract class Product extends \classes\Goods implements \interfaces\ProductInterface
 {
     public $mark;
     public $title;
