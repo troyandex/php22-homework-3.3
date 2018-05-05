@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Products;
+namespace classes\Products;
 
 class TV extends Product
 {

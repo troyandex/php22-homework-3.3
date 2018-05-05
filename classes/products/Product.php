@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Products;
+namespace classes\Products;
 
 abstract class Product extends \Classes\Goods implements \Interfaces\ProductInterface
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Classes\products;
+namespace classes\products;
 
 class Car extends Product implements \interfaces\CarInterface
 {
