@@ -3,10 +3,9 @@ namespace Classes\Products;
 
 abstract class Product extends \Classes\Goods implements \Interfaces\ProductInterface
 {
-    private $id;
-    private $title;
-    private $price;
-    private $mark;
+    public $mark;
+    public $title;
+    public $price;
 
     public function __construct($title, $price)
     {
@@ -18,5 +17,11 @@ abstract class Product extends \Classes\Goods implements \Interfaces\ProductInte
         $mark = explode(" ", $this->title);
         $this->mark = $mark[0];
         return $this->mark;
+    }
+    public function getPrint()
+    {
+        echo '<pre>';
+        print_r($this);
+        echo '</pre>';
     }
 }

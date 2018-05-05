@@ -1,8 +1,8 @@
 <?php
-namespace Classes\Animals;
+namespace classes\animals;
 
 
-abstract class Animal extends \Classes\Goods implements \Interfaces\AnimalInterface
+abstract class Animal extends \classes\Goods implements \interfaces\AnimalInterface
 {
     protected $breed; // порода
     protected $dwellingPlace; // место обитания

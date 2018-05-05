@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Products;
+namespace classes\products;
 
 class BallpointPen extends Product
 {

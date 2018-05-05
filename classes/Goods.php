@@ -1,11 +1,9 @@
 <?php
-namespace Classes;
+namespace classes;
 
 
-class goods // супер класс товары
+abstract class goods // супер класс товары
 {
-    private $id;
-    private $title;
-    private $price;
-
+    public $title;
+    public $price;
 }
