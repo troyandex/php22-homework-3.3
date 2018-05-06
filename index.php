@@ -80,10 +80,18 @@ echo '<br>';
 $Basket->deleteOneProduct($BMV);
 ?>
 
+<h1>Вывод корзины</h1>
+<?php
+$Basket->showAllProduct(); // выводит все продукты
+?>
 <h1>Вывод заказа</h1>
 <?php
-$Basket->showAllProduct();
+$Order = new \classes\Order();
+$Order->setOrder($Basket); // создание заказа из карзины
+$Order->showAllProduct(); // выводит весь заказ
 ?>
+<br>
+<button>подтвердить заказ</button>
 
 </body>
 </html>
